@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pawpal/onboard.dart';
+import 'package:pawpal/register.dart';
 import 'welcome.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => WelcomeScreen(),
-        '/onboard': (context) => OnboardScreen(),
+        '/onboard': (context) => RegisterScreen(),
 
       },
     );
