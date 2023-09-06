@@ -10,7 +10,7 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: null, // Set the app bar to null to remove it
       body: Container(
-        color: Color(hexColor('#FEEBEB')), // Change the background color here
+        color: Colors.white, // Change the background color here
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start, // Align children to the top
           children: [
@@ -29,19 +29,20 @@ class WelcomeScreen extends StatelessWidget {
                 fontSize: 37.0,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'poor',
-                color: Colors.black54,
+                color: Colors.black,
               ),
             ),
             Lottie.asset(
-              'assets/animations/girl.json', // Replace with the path to your Lottie file
+              'assets/animations/welcome.json',
+              // Replace with the path to your Lottie file
               width: 1300,
-              height: 300,
+              height: 350,
             ),
             SizedBox(height: 42.0),
             ElevatedButton(
               child: Text(
                 "Get Started",
-                style: TextStyle(fontSize: 19.0, fontFamily: 'poor', fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
               ),
               style: ElevatedButton.styleFrom(
                 primary: Colors.amberAccent, // Change the button background color here

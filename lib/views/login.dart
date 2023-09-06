@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.mail),
+        prefixIcon: Icon(Icons.mail, color: Colors.amber, size: 21,),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Enter Your Email",
         hintStyle: TextStyle(fontSize: 14),
@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       textInputAction: TextInputAction.done,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.vpn_key),
+        prefixIcon: Icon(Icons.vpn_key, color: Colors.amber, size: 21,),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Enter Your Password",
         hintStyle: TextStyle(fontSize: 14),
@@ -84,7 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Container(
             color: Colors.white,
             child: Padding(
-              padding: const EdgeInsets.all(36.0),
+              padding: const EdgeInsets.all(26.0),
               child: Form(
                 key: _formKey,
                 child: Column(
