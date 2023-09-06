@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:lottie/lottie.dart';
-import 'package:pawpal/register.dart';
+import 'package:pawpal/views/login.dart';
+import 'package:pawpal/views/register.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -53,7 +54,7 @@ class WelcomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => RegisterScreen()),
+                  MaterialPageRoute(builder: (context) => LoginScreen()),
                 );
               },
             ),
